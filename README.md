@@ -28,3 +28,9 @@ __future__ import print_function permite la impresión de Python 3 en Python
 
 python MoviesCreateTable.py
 
+3. Para obtener más información sobre la gestión de tablas, consulte:
+
+* https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html
+
+
+
