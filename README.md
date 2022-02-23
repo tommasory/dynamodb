@@ -135,6 +135,22 @@ Note:
 * La clase DecimalEncoder se usa para imprimir números almacenados usando la clase Decimal. El SDK de Boto utiliza la clase Decimal para contener los valores numéricos de Amazon DynamoDB.
 
 ### Paso 3.2: Leer un artículo
+In the previous program, you added the following item to the table.
+
+{
+   year: 2015,
+   title: "The Big New Movie",
+   info: {
+        plot: "Nothing happens at all.",
+        rating: 0
+   }
+}
+
+Puede utilizar el método get_item para leer el elemento de la tabla Películas. Debe especificar los valores de la clave principal para que pueda leer cualquier elemento de Películas si sabe su año y título.
+
+1. Copie el siguiente programa y péguelo en un archivo llamado MoviesItemOps02.py.
+
+
 ### Paso 3.3: Actualizar un artículo
 ### Paso 3.4: Incrementa un Contador Atómico
 ### Paso 3.5: Actualizar un artículo (condicionalmente)
