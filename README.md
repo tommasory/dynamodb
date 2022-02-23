@@ -42,6 +42,7 @@ sobre unos pocos miles de películas de Internet Movie Database (IMDb). Los dato
 de la película están en formato JSON, como se muestra en el siguiente ejemplo. 
 Para cada película, hay un año, un título y un mapa JSON llamado info.
 
+```
 [
    {
       "year" : ... ,
@@ -57,6 +58,8 @@ Para cada película, hay un año, un título y un mapa JSON llamado info.
     ...
 
 ]
+```
+
 
 En los datos JSON, tenga en cuenta lo siguiente:
 
@@ -66,7 +69,7 @@ En los datos JSON, tenga en cuenta lo siguiente:
 
 El siguiente es un ejemplo de datos de película.
 
-
+```
 {
     "year" : 2013,
     "title" : "Turn It Down, Or Else!",
@@ -92,6 +95,8 @@ El siguiente es un ejemplo de datos de película.
        ]
     }
 }
+```
+
 
 ### Paso 2.1: Descargue el archivo de datos de muestra
 
@@ -137,6 +142,7 @@ Note:
 ### Paso 3.2: Leer un artículo
 In the previous program, you added the following item to the table.
 
+```
 {
    year: 2015,
    title: "The Big New Movie",
@@ -145,6 +151,7 @@ In the previous program, you added the following item to the table.
         rating: 0
    }
 }
+```
 
 Puede utilizar el método get_item para leer el elemento de la tabla Películas. Debe especificar los valores de la clave principal para que pueda leer cualquier elemento de Películas si sabe su año y título.
 
@@ -155,4 +162,9 @@ Puede utilizar el método get_item para leer el elemento de la tabla Películas.
 ### Paso 3.4: Incrementa un Contador Atómico
 ### Paso 3.5: Actualizar un artículo (condicionalmente)
 ### Paso 3.6: eliminar un elemento
+
+```
+code
+```
+
 
