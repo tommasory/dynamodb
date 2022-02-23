@@ -157,8 +157,57 @@ Puede utilizar el método get_item para leer el elemento de la tabla Películas.
 
 1. Copie el siguiente programa y péguelo en un archivo llamado MoviesItemOps02.py.
 
+2. Para ejecutar el programa, ingrese el siguiente comando. 
+
+Python MoviesItemOps02.py
+
 
 ### Paso 3.3: Actualizar un artículo
+
+Puede utilizar el método update_item para modificar un elemento existente. Puede actualizar los valores de los atributos existentes, agregar nuevos atributos o eliminar atributos.
+
+En este ejemplo, realiza las siguientes actualizaciones:
+
+* Cambiar el valor de los atributos existentes (puntuación, gráfico).
+
+* Agregue un nuevo atributo de lista (actores) al mapa de información existente.
+
+A continuación se muestra el elemento existente.
+```
+{
+   year: 2015,
+   title: "The Big New Movie",
+   info: {
+        plot: "Nothing happens at all.",
+        rating: 0
+   }
+}
+```
+El elemento se actualiza de la siguiente manera.
+```
+{
+   year: 2015,
+   title: "The Big New Movie",
+   info: {
+           plot: "Everything happens all at once.",
+           rating: 5.5,
+           actors: ["Larry", "Moe", "Curly"]
+   }
+}
+```
+
+1. Copie el siguiente programa y péguelo en un archivo llamado MoviesItemOps03.py.
+
+Nota
+* Este programa utiliza UpdateExpression para describir todas las actualizaciones que desea realizar en el elemento especificado.
+
+* El parámetro ReturnValues indica a DynamoDB que devuelva solo los atributos actualizados (UPDATED_NEW).
+
+2. Para ejecutar el programa, ingrese el siguiente comando. 
+
+Python MoviesItemOps03.py
+
+
 ### Paso 3.4: Incrementa un Contador Atómico
 ### Paso 3.5: Actualizar un artículo (condicionalmente)
 ### Paso 3.6: eliminar un elemento
