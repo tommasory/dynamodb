@@ -110,3 +110,33 @@ Después de descargar los datos de muestra, puede ejecutar el siguiente programa
 2. Para ejecutar el programa, ingrese el siguiente comando. 
 python MoviesLoadData.py
 
+
+
+## Paso 3: crear, leer, actualizar y eliminar un elemento con Python
+
+En este paso, realiza operaciones de lectura y escritura en un elemento de la 
+tabla Películas. 
+
+Para obtener [más información](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html) sobre cómo leer y escribir datos, consulte Trabajar 
+con elementos y atributos.
+
+
+### Paso 3.1: Crear un nuevo elemento
+En este paso, agrega un nuevo elemento a la tabla Películas. 
+1. Copie el siguiente programa y péguelo en un archivo llamado MoviesItemOps01.py.
+
+2. To run the program, enter the following command.
+python MoviesItemOps01.py
+
+Note:
+
+* Se requiere la clave principal. Este código agrega un elemento que tiene una clave principal (año, título) y atributos de información. El atributo de información almacena JSON de muestra que proporciona más información sobre la película.
+
+* La clase DecimalEncoder se usa para imprimir números almacenados usando la clase Decimal. El SDK de Boto utiliza la clase Decimal para contener los valores numéricos de Amazon DynamoDB.
+
+### Paso 3.2: Leer un artículo
+### Paso 3.3: Actualizar un artículo
+### Paso 3.4: Incrementa un Contador Atómico
+### Paso 3.5: Actualizar un artículo (condicionalmente)
+### Paso 3.6: eliminar un elemento
+
