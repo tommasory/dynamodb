@@ -225,6 +225,37 @@ Python MoviesItemOps04.py
 
 
 ### Paso 3.5: Actualizar un artículo (condicionalmente)
+
+El siguiente programa muestra cómo usar UpdateItem con una condición. Si la 
+condición se evalúa como verdadera, la actualización se realiza correctamente; 
+de lo contrario, la actualización no se realiza.
+
+En este caso, el elemento se actualiza solo si hay más de tres actores.
+
+1. Copie el siguiente programa y péguelo en un archivo llamado MoviesItemOps05.py.
+
+2. Para ejecutar el programa, ingrese el siguiente comando.
+
+Python MoviesItemOps05.py
+
+El programa debería fallar con el siguiente mensaje.
+
+*La solicitud condicional falló*
+
+El programa falla porque la película tiene tres actores, pero la condición busca más de tres actores.
+
+3. Modifique el programa para que ConditionExpression tenga el siguiente aspecto.
+
+```
+ConditionExpression="size(info.actors) >= :num", 
+```
+
+La condición ahora es mayor o igual a 3 en lugar de mayor que 3.
+
+4. Vuelva a ejecutar el programa. La operación UpdateItem ahora debería tener éxito.
+
+
+
 ### Paso 3.6: eliminar un elemento
 
 ```
