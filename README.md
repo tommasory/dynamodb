@@ -258,8 +258,37 @@ La condición ahora es mayor o igual a 3 en lugar de mayor que 3.
 
 ### Paso 3.6: eliminar un elemento
 
+Puede usar el método delete_item para eliminar un elemento especificando su 
+clave principal. Opcionalmente, puede proporcionar una ConditionExpression para 
+evitar que el elemento se elimine si no se cumple la condición.
+
+En el siguiente ejemplo, intenta eliminar un elemento de película específico si 
+su calificación es 5 o menos.
+
+1. Copie el siguiente programa y péguelo en un archivo llamado MoviesItemOps06.py.
+
+2. Para ejecutar el programa, ingrese el siguiente comando.
+
+Python MoviesItemOps06.py
+
+El programa debería fallar con el siguiente mensaje.
+
+*La solicitud condicional falló*
+
+El programa falla porque la calificación de esta película en particular es superior a 5.
+
+3. Modifique el programa para eliminar la condición en table.delete_item.
+
 ```
-code
+response = table.delete_item(
+    Key={
+        'year': year,
+        'title': title
+    }
+) 
 ```
+
+4. Ejecuta el programa. Ahora, la eliminación se realizó correctamente porque 
+eliminó la condición.
 
 
