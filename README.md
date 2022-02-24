@@ -209,6 +209,21 @@ Python MoviesItemOps03.py
 
 
 ### Paso 3.4: Incrementa un Contador Atómico
+
+DynamoDB admite contadores atómicos, que usan el método update_item para 
+incrementar o disminuir el valor de un atributo existente sin interferir con 
+otras solicitudes de escritura. (Todas las solicitudes de escritura se aplican 
+en el orden en que se reciben).
+
+El siguiente programa muestra cómo incrementar la calificación de una película. 
+Cada vez que ejecuta el programa, incrementa este atributo en uno.
+
+1. Copie el siguiente programa y péguelo en un archivo llamado MoviesItemOps04.py.
+
+2. Para ejecutar el programa, ingrese el siguiente comando. 
+Python MoviesItemOps04.py
+
+
 ### Paso 3.5: Actualizar un artículo (condicionalmente)
 ### Paso 3.6: eliminar un elemento
 
